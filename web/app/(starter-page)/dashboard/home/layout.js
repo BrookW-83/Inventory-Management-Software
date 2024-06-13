@@ -1,4 +1,4 @@
-import HomeNav from "@/components/dashboard/HomeNavbar"
+import HomeNav from "@/components/home/HomeNavbar"
 
 export default function Layout ({children}) {
     return (

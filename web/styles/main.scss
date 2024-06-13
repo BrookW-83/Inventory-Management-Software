@@ -2,129 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-// @font-face {
-//     font-family: "SofiaProSemiBold";
-//     src: url("../public/fonts/SofiaProSemiBold.eot") format("eot"),
-//         url("../public/fonts/SofiaProSemiBold.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProSemiBold.woff") format("woff");
-// }
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
 
-// @font-face {
-//     font-family: "SofiaProLight";
-//     src: url("../public/fonts/SofiaProLight.eot") format("eot"),
-//         url("../public/fonts/SofiaProLight.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProLight.woff") format("woff");
-// }
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
 
-// @font-face {
-//     font-family: "SofiaProMedium";
-//     src: url("../public/fonts/SofiaProMedium.eot") format("eot"),
-//         url("../public/fonts/SofiaProMedium.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProMedium.woff") format("woff");
-// }
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
 
-// @font-face {
-//     font-family: "SofiaProBlackItalic";
-//     src: url("../public/fonts/SofiaProBlack-Italic.eot") format("eot"),
-//         url("../public/fonts/SofiaProBlack-Italic.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProBlack-Italic.woff") format("woff");
-// }
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
 
-// @font-face {
-//     font-family: "SofiaProBlack";
-//     src: url("../public/fonts/SofiaProBlack.eot") format("eot"),
-//         url("../public/fonts/SofiaProBlack.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProBlack.woff") format("woff");
-// }
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
 
-// @font-face {
-//     font-family: "SofiaProBoldItalic";
-//     src: url("../public/fonts/SofiaProBold-Italic.eot") format("eot"),
-//         url("../public/fonts/SofiaProBold-Italic.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProBold-Italic.woff") format("woff");
-// }
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
 
-// @font-face {
-//     font-family: "SofiaProBold";
-//     src: url("../public/fonts/SofiaProBold.eot") format("eot"),
-//         url("../public/fonts/SofiaProBold.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProBold.woff") format("woff");
-// }
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
 
-// @font-face {
-//     font-family: "SofiaProUltraLight";
-//     src: url("../public/fonts/SofiaProUltraLight.eot") format("eot"),
-//         url("../public/fonts/SofiaProUltraLight.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProUltraLight.woff") format("woff");
-// }
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
 
-// @font-face {
-//     font-family: "SofiaProUltraLightItalic";
-//     src: url("../public/fonts/SofiaProUltraLight-Italic.eot") format("eot"),
-//         url("../public/fonts/SofiaProUltraLight-Italic.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProUltraLight-Italic.woff") format("woff");
-// }
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
 
-// @font-face {
-//     font-family: "SofiaProSemiBoldItalic";
-//     src: url("../public/fonts/SofiaProSemiBold-Italic.eot") format("eot"),
-//         url("../public/fonts/SofiaProSemiBold-Italic.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProSemiBold-Italic.woff") format("woff");
-// }
+      --radius: 0.5rem;
+    }
 
-// @font-face {
-//     font-family: "SofiaProRegularItalic";
-//     src: url("../public/fonts/SofiaProRegular-Italic.eot") format("eot"),
-//         url("../public/fonts/SofiaProRegular-Italic.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProRegular-Italic.woff") format("woff");
-// }
+    .dark {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
 
-// @font-face {
-//     font-family: "SofiaProRegular";
-//     src: url("../public/fonts/SofiaProRegular.eot") format("eot"),
-//         url("../public/fonts/SofiaProRegular.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProRegular.woff") format("woff");
-// }
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
 
-// @font-face {
-//     font-family: "SofiaProExtraLightItalic";
-//     src: url("../public/fonts/SofiaProExtraLight-Italic.eot") format("eot"),
-//         url("../public/fonts/SofiaProExtraLight-Italic.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProExtraLight-Italic.woff") format("woff");
-// }
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
 
-// @font-face {
-//     font-family: "SofiaProExtraLight";
-//     src: url("../public/fonts/SofiaProExtraLight.eot") format("eot"),
-//         url("../public/fonts/SofiaProExtraLight.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProExtraLight.woff") format("woff");
-// }
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
 
-// @font-face {
-//     font-family: "SofiaProLightItalic";
-//     src: url("../public/fonts/SofiaProLight-Italic.eot") format("eot"),
-//         url("../public/fonts/SofiaProLight-Italic.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProLight-Italic.woff") format("woff");
-// }
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
 
-// @font-face {
-//     font-family: "SofiaProLight";
-//     src: url("../public/fonts/SofiaProLight.eot") format("eot"),
-//         url("../public/fonts/SofiaProLight.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProLight.woff") format("woff");
-// }
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
 
-// @font-face {
-//     font-family: "SofiaProMediumItalic";
-//     src: url("../public/fonts/SofiaProMedium-Italic.eot") format("eot"),
-//         url("../public/fonts/SofiaProMedium-Italic.ttf") format("ttf"),
-//         url("../public/fonts/SofiaProMedium-Italic.woff") format("woff");
-// }
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
 
-// @font-face {
-//     font-family: "AbolitionTestRegular";
-//     src: url("../public/fonts/AbolitionTest-Regular.eot") format("eot"),
-//         url("../public/fonts/AbolitionTest-Regular.ttf") format("ttf"),
-//         url("../public/fonts/AbolitionTest-Regular.woff") format("woff");
-//     font-weight: 100;
-// }
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
